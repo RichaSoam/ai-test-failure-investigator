@@ -1,0 +1,28 @@
+[
+  {
+    "id": "FAIL-001",
+    "scenario": "User login",
+    "application": "Demo Application",
+    "error_type": "ElementNotFoundException",
+    "error_message": "Login button was not found",
+    "failed_step": "When user clicks the login button",
+    "evidence": [
+      "Page was still loading",
+      "Button was not available when click was attempted"
+    ],
+    "expected_category": "synchronization_issue"
+  },
+  {
+    "id": "FAIL-002",
+    "scenario": "Create customer",
+    "application": "Demo Application",
+    "error_type": "TimeoutException",
+    "error_message": "Request timed out after 30 seconds",
+    "failed_step": "When user submits customer details",
+    "evidence": [
+      "Synthetic application log reports service unavailable",
+      "Request did not receive a response"
+    ],
+    "expected_category": "environment_issue"
+  }
+]
