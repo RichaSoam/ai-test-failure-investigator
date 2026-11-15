@@ -1,0 +1,202 @@
+[
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-003",
+    "scenario_name": "Login with blank username",
+    "expected_category": "synchronization_issue",
+    "expected_group": "SYNC-01",
+    "expected_root_cause": "Page rendering completed after the click attempt",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-008",
+    "scenario_name": "Logout successfully",
+    "expected_category": "synchronization_issue",
+    "expected_group": "SYNC-01",
+    "expected_root_cause": "Page rendering completed after the click attempt",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-013",
+    "scenario_name": "Login with inactive account",
+    "expected_category": "synchronization_issue",
+    "expected_group": "SYNC-02",
+    "expected_root_cause": "AJAX content was not ready when the test interacted with it",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-018",
+    "scenario_name": "Delete a customer",
+    "expected_category": "synchronization_issue",
+    "expected_group": "SYNC-02",
+    "expected_root_cause": "AJAX content was not ready when the test interacted with it",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-023",
+    "scenario_name": "Verify customer status",
+    "expected_category": "synchronization_issue",
+    "expected_group": "SYNC-02",
+    "expected_root_cause": "AJAX content was not ready when the test interacted with it",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-028",
+    "scenario_name": "Search product by ID",
+    "expected_category": "synchronization_issue",
+    "expected_group": "SYNC-02",
+    "expected_root_cause": "AJAX content was not ready when the test interacted with it",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-033",
+    "scenario_name": "Sort search results",
+    "expected_category": "api_backend_issue",
+    "expected_group": "API-01",
+    "expected_root_cause": "Customer service returned HTTP 503",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "failed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-038",
+    "scenario_name": "Verify search suggestions",
+    "expected_category": "api_backend_issue",
+    "expected_group": "API-01",
+    "expected_root_cause": "Customer service returned HTTP 503",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "failed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-043",
+    "scenario_name": "Cancel an order",
+    "expected_category": "api_backend_issue",
+    "expected_group": "API-02",
+    "expected_root_cause": "Order service did not respond within the configured timeout",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-048",
+    "scenario_name": "Export order details",
+    "expected_category": "api_backend_issue",
+    "expected_group": "API-02",
+    "expected_root_cause": "Order service did not respond within the configured timeout",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-053",
+    "scenario_name": "Make a successful payment",
+    "expected_category": "locator_issue",
+    "expected_group": "LOC-01",
+    "expected_root_cause": "The expected search result locator did not match the page",
+    "rerun_safe": false,
+    "expected_rerun_outcome": "not_run"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-058",
+    "scenario_name": "Verify payment receipt",
+    "expected_category": "locator_issue",
+    "expected_group": "LOC-01",
+    "expected_root_cause": "The expected search result locator did not match the page",
+    "rerun_safe": false,
+    "expected_rerun_outcome": "not_run"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-063",
+    "scenario_name": "Verify payment amount",
+    "expected_category": "locator_issue",
+    "expected_group": "LOC-01",
+    "expected_root_cause": "The expected search result locator did not match the page",
+    "rerun_safe": false,
+    "expected_rerun_outcome": "not_run"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-068",
+    "scenario_name": "Update email address",
+    "expected_category": "environment_issue",
+    "expected_group": "ENV-01",
+    "expected_root_cause": "Synthetic QA browser session disconnected",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-073",
+    "scenario_name": "View user preferences",
+    "expected_category": "environment_issue",
+    "expected_group": "ENV-01",
+    "expected_root_cause": "Synthetic QA browser session disconnected",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "passed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-078",
+    "scenario_name": "Verify profile audit history",
+    "expected_category": "environment_issue",
+    "expected_group": "ENV-02",
+    "expected_root_cause": "Synthetic QA database connection was unavailable",
+    "rerun_safe": true,
+    "expected_rerun_outcome": "failed"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-083",
+    "scenario_name": "Filter report by date",
+    "expected_category": "test_data_issue",
+    "expected_group": "DATA-01",
+    "expected_root_cause": "Customer record already exists in the test dataset",
+    "rerun_safe": false,
+    "expected_rerun_outcome": "not_run"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-088",
+    "scenario_name": "Verify report pagination",
+    "expected_category": "test_data_issue",
+    "expected_group": "DATA-01",
+    "expected_root_cause": "Customer record already exists in the test dataset",
+    "rerun_safe": false,
+    "expected_rerun_outcome": "not_run"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-093",
+    "scenario_name": "Create customer through API",
+    "expected_category": "application_defect",
+    "expected_group": "APP-01",
+    "expected_root_cause": "Application returned an incorrect order total",
+    "rerun_safe": false,
+    "expected_rerun_outcome": "not_run"
+  },
+  {
+    "execution_id": "EXEC-001",
+    "scenario_id": "SCN-098",
+    "scenario_name": "Verify invalid API token",
+    "expected_category": "application_defect",
+    "expected_group": "APP-02",
+    "expected_root_cause": "Application returned an incorrect payment status",
+    "rerun_safe": false,
+    "expected_rerun_outcome": "not_run"
+  }
+]

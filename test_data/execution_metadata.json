@@ -1,0 +1,13 @@
+{
+  "execution_id": "EXEC-001",
+  "project": "Synthetic QA Automation Project",
+  "framework": "Ruby Cucumber + Watir",
+  "environment": "QA",
+  "branch": "main",
+  "build_number": "BUILD-1001",
+  "started_at": "2026-11-15T14:57:08.206694+00:00",
+  "total_scenarios": 100,
+  "passed_scenarios": 80,
+  "failed_scenarios": 20,
+  "data_type": "synthetic"
+}

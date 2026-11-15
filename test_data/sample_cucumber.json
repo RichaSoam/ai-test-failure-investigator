@@ -1,0 +1,4446 @@
+[
+  {
+    "id": "login",
+    "keyword": "Feature",
+    "name": "User Login",
+    "description": "Synthetic QA automation feature",
+    "line": 1,
+    "uri": "features/login.feature",
+    "elements": [
+      {
+        "id": "login;scn-001",
+        "keyword": "Scenario",
+        "name": "Login with valid credentials",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 11,
+            "result": {
+              "status": "passed",
+              "duration": 756000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 12,
+            "result": {
+              "status": "passed",
+              "duration": 402000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 13,
+            "result": {
+              "status": "passed",
+              "duration": 1426000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-002",
+        "keyword": "Scenario",
+        "name": "Login with invalid password",
+        "line": 13,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 14,
+            "result": {
+              "status": "passed",
+              "duration": 1303000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 15,
+            "result": {
+              "status": "passed",
+              "duration": 1214000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 16,
+            "result": {
+              "status": "passed",
+              "duration": 871000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-003",
+        "keyword": "Scenario",
+        "name": "Login with blank username",
+        "line": 16,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 17,
+            "result": {
+              "status": "passed",
+              "duration": 719000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 18,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Watir::Exception::UnknownObjectException: Login button was not found\nWatir::Exception::UnknownObjectException: Login button was not found\n\tfrom features/login.feature:18:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 19,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-004",
+        "keyword": "Scenario",
+        "name": "Login with blank password",
+        "line": 19,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 20,
+            "result": {
+              "status": "passed",
+              "duration": 656000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 21,
+            "result": {
+              "status": "passed",
+              "duration": 2028000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 22,
+            "result": {
+              "status": "passed",
+              "duration": 430000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-005",
+        "keyword": "Scenario",
+        "name": "Verify account lockout",
+        "line": 22,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 23,
+            "result": {
+              "status": "passed",
+              "duration": 422000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 24,
+            "result": {
+              "status": "passed",
+              "duration": 683000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 25,
+            "result": {
+              "status": "passed",
+              "duration": 1195000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-006",
+        "keyword": "Scenario",
+        "name": "Login with expired password",
+        "line": 25,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 26,
+            "result": {
+              "status": "passed",
+              "duration": 1252000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 27,
+            "result": {
+              "status": "passed",
+              "duration": 2369000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 28,
+            "result": {
+              "status": "passed",
+              "duration": 408000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-007",
+        "keyword": "Scenario",
+        "name": "Verify remember me",
+        "line": 28,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 29,
+            "result": {
+              "status": "passed",
+              "duration": 1114000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 30,
+            "result": {
+              "status": "passed",
+              "duration": 2018000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 31,
+            "result": {
+              "status": "passed",
+              "duration": 1202000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-008",
+        "keyword": "Scenario",
+        "name": "Logout successfully",
+        "line": 31,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 32,
+            "result": {
+              "status": "passed",
+              "duration": 2139000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 33,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Watir::Exception::UnknownObjectException: Submit button was not found\nWatir::Exception::UnknownObjectException: Submit button was not found\n\tfrom features/login.feature:33:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 34,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-009",
+        "keyword": "Scenario",
+        "name": "Login after logout",
+        "line": 34,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 35,
+            "result": {
+              "status": "passed",
+              "duration": 1439000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 36,
+            "result": {
+              "status": "passed",
+              "duration": 326000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 37,
+            "result": {
+              "status": "passed",
+              "duration": 953000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-010",
+        "keyword": "Scenario",
+        "name": "Verify session timeout",
+        "line": 37,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 38,
+            "result": {
+              "status": "passed",
+              "duration": 2031000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 39,
+            "result": {
+              "status": "passed",
+              "duration": 1693000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 40,
+            "result": {
+              "status": "passed",
+              "duration": 1438000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-011",
+        "keyword": "Scenario",
+        "name": "Login with special characters",
+        "line": 40,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 41,
+            "result": {
+              "status": "passed",
+              "duration": 936000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 42,
+            "result": {
+              "status": "passed",
+              "duration": 1181000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 43,
+            "result": {
+              "status": "passed",
+              "duration": 1678000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-012",
+        "keyword": "Scenario",
+        "name": "Verify password masking",
+        "line": 43,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 44,
+            "result": {
+              "status": "passed",
+              "duration": 718000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 45,
+            "result": {
+              "status": "passed",
+              "duration": 679000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 46,
+            "result": {
+              "status": "passed",
+              "duration": 1856000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;scn-013",
+        "keyword": "Scenario",
+        "name": "Login with inactive account",
+        "line": 46,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 47,
+            "result": {
+              "status": "passed",
+              "duration": 696000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 48,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Watir::Wait::TimeoutError: Timed out waiting for search results\nWatir::Wait::TimeoutError: Timed out waiting for search results\n\tfrom features/login.feature:48:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 49,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "id": "customer",
+    "keyword": "Feature",
+    "name": "Customer Management",
+    "description": "Synthetic QA automation feature",
+    "line": 1,
+    "uri": "features/customer.feature",
+    "elements": [
+      {
+        "id": "customer;scn-014",
+        "keyword": "Scenario",
+        "name": "Create a new customer",
+        "line": 49,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 50,
+            "result": {
+              "status": "passed",
+              "duration": 1770000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 51,
+            "result": {
+              "status": "passed",
+              "duration": 1708000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 52,
+            "result": {
+              "status": "passed",
+              "duration": 1383000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-015",
+        "keyword": "Scenario",
+        "name": "Update customer details",
+        "line": 52,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 53,
+            "result": {
+              "status": "passed",
+              "duration": 477000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 54,
+            "result": {
+              "status": "passed",
+              "duration": 2181000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 55,
+            "result": {
+              "status": "passed",
+              "duration": 2496000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-016",
+        "keyword": "Scenario",
+        "name": "Search customer by name",
+        "line": 55,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 56,
+            "result": {
+              "status": "passed",
+              "duration": 811000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 57,
+            "result": {
+              "status": "passed",
+              "duration": 1850000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 58,
+            "result": {
+              "status": "passed",
+              "duration": 622000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-017",
+        "keyword": "Scenario",
+        "name": "Search customer by ID",
+        "line": 58,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 59,
+            "result": {
+              "status": "passed",
+              "duration": 1500000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 60,
+            "result": {
+              "status": "passed",
+              "duration": 1781000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 61,
+            "result": {
+              "status": "passed",
+              "duration": 1087000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-018",
+        "keyword": "Scenario",
+        "name": "Delete a customer",
+        "line": 61,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 62,
+            "result": {
+              "status": "passed",
+              "duration": 584000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 63,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Watir::Wait::TimeoutError: Timed out waiting for order details\nWatir::Wait::TimeoutError: Timed out waiting for order details\n\tfrom features/customer.feature:63:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 64,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-019",
+        "keyword": "Scenario",
+        "name": "Verify mandatory customer fields",
+        "line": 64,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 65,
+            "result": {
+              "status": "passed",
+              "duration": 487000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 66,
+            "result": {
+              "status": "passed",
+              "duration": 1233000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 67,
+            "result": {
+              "status": "passed",
+              "duration": 1485000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-020",
+        "keyword": "Scenario",
+        "name": "Create customer with duplicate email",
+        "line": 67,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 68,
+            "result": {
+              "status": "passed",
+              "duration": 626000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 69,
+            "result": {
+              "status": "passed",
+              "duration": 1253000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 70,
+            "result": {
+              "status": "passed",
+              "duration": 713000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-021",
+        "keyword": "Scenario",
+        "name": "View customer details",
+        "line": 70,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 71,
+            "result": {
+              "status": "passed",
+              "duration": 1856000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 72,
+            "result": {
+              "status": "passed",
+              "duration": 1438000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 73,
+            "result": {
+              "status": "passed",
+              "duration": 2157000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-022",
+        "keyword": "Scenario",
+        "name": "Update customer address",
+        "line": 73,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 74,
+            "result": {
+              "status": "passed",
+              "duration": 1794000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 75,
+            "result": {
+              "status": "passed",
+              "duration": 966000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 76,
+            "result": {
+              "status": "passed",
+              "duration": 1816000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-023",
+        "keyword": "Scenario",
+        "name": "Verify customer status",
+        "line": 76,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 77,
+            "result": {
+              "status": "passed",
+              "duration": 1755000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 78,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Watir::Wait::TimeoutError: Timed out waiting for report content\nWatir::Wait::TimeoutError: Timed out waiting for report content\n\tfrom features/customer.feature:78:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 79,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-024",
+        "keyword": "Scenario",
+        "name": "Export customer details",
+        "line": 79,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 80,
+            "result": {
+              "status": "passed",
+              "duration": 1158000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 81,
+            "result": {
+              "status": "passed",
+              "duration": 1393000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 82,
+            "result": {
+              "status": "passed",
+              "duration": 592000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-025",
+        "keyword": "Scenario",
+        "name": "Filter active customers",
+        "line": 82,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 83,
+            "result": {
+              "status": "passed",
+              "duration": 1000000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 84,
+            "result": {
+              "status": "passed",
+              "duration": 2487000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 85,
+            "result": {
+              "status": "passed",
+              "duration": 1302000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer;scn-026",
+        "keyword": "Scenario",
+        "name": "Verify customer audit history",
+        "line": 85,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 86,
+            "result": {
+              "status": "passed",
+              "duration": 969000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 87,
+            "result": {
+              "status": "passed",
+              "duration": 2193000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 88,
+            "result": {
+              "status": "passed",
+              "duration": 1854000000
+            }
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "id": "search",
+    "keyword": "Feature",
+    "name": "Search",
+    "description": "Synthetic QA automation feature",
+    "line": 1,
+    "uri": "features/search.feature",
+    "elements": [
+      {
+        "id": "search;scn-027",
+        "keyword": "Scenario",
+        "name": "Search product by name",
+        "line": 88,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 89,
+            "result": {
+              "status": "passed",
+              "duration": 1405000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 90,
+            "result": {
+              "status": "passed",
+              "duration": 1199000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 91,
+            "result": {
+              "status": "passed",
+              "duration": 1628000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-028",
+        "keyword": "Scenario",
+        "name": "Search product by ID",
+        "line": 91,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 92,
+            "result": {
+              "status": "passed",
+              "duration": 529000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 93,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Watir::Wait::TimeoutError: Timed out waiting for profile content\nWatir::Wait::TimeoutError: Timed out waiting for profile content\n\tfrom features/search.feature:93:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 94,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-029",
+        "keyword": "Scenario",
+        "name": "Search with partial text",
+        "line": 94,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 95,
+            "result": {
+              "status": "passed",
+              "duration": 1238000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 96,
+            "result": {
+              "status": "passed",
+              "duration": 431000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 97,
+            "result": {
+              "status": "passed",
+              "duration": 1592000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-030",
+        "keyword": "Scenario",
+        "name": "Search with no matching result",
+        "line": 97,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 98,
+            "result": {
+              "status": "passed",
+              "duration": 1943000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 99,
+            "result": {
+              "status": "passed",
+              "duration": 1396000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 100,
+            "result": {
+              "status": "passed",
+              "duration": 571000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-031",
+        "keyword": "Scenario",
+        "name": "Search with special characters",
+        "line": 100,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 101,
+            "result": {
+              "status": "passed",
+              "duration": 1164000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 102,
+            "result": {
+              "status": "passed",
+              "duration": 1588000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 103,
+            "result": {
+              "status": "passed",
+              "duration": 1170000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-032",
+        "keyword": "Scenario",
+        "name": "Filter search results",
+        "line": 103,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 104,
+            "result": {
+              "status": "passed",
+              "duration": 2344000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 105,
+            "result": {
+              "status": "passed",
+              "duration": 1920000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 106,
+            "result": {
+              "status": "passed",
+              "duration": 2179000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-033",
+        "keyword": "Scenario",
+        "name": "Sort search results",
+        "line": 106,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 107,
+            "result": {
+              "status": "passed",
+              "duration": 885000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 108,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Net::HTTPFatalError: 503 Service Unavailable\nNet::HTTPFatalError: 503 Service Unavailable\n\tfrom features/search.feature:108:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 109,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-034",
+        "keyword": "Scenario",
+        "name": "Search with blank input",
+        "line": 109,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 110,
+            "result": {
+              "status": "passed",
+              "duration": 1384000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 111,
+            "result": {
+              "status": "passed",
+              "duration": 871000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 112,
+            "result": {
+              "status": "passed",
+              "duration": 1310000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-035",
+        "keyword": "Scenario",
+        "name": "Verify pagination",
+        "line": 112,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 113,
+            "result": {
+              "status": "passed",
+              "duration": 1376000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 114,
+            "result": {
+              "status": "passed",
+              "duration": 2054000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 115,
+            "result": {
+              "status": "passed",
+              "duration": 1935000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-036",
+        "keyword": "Scenario",
+        "name": "Search recently added product",
+        "line": 115,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 116,
+            "result": {
+              "status": "passed",
+              "duration": 1782000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 117,
+            "result": {
+              "status": "passed",
+              "duration": 1198000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 118,
+            "result": {
+              "status": "passed",
+              "duration": 866000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-037",
+        "keyword": "Scenario",
+        "name": "Search inactive product",
+        "line": 118,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 119,
+            "result": {
+              "status": "passed",
+              "duration": 2387000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 120,
+            "result": {
+              "status": "passed",
+              "duration": 2321000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 121,
+            "result": {
+              "status": "passed",
+              "duration": 672000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-038",
+        "keyword": "Scenario",
+        "name": "Verify search suggestions",
+        "line": 121,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 122,
+            "result": {
+              "status": "passed",
+              "duration": 492000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 123,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "RuntimeError: Customer service returned an unsuccessful response\nRuntimeError: Customer service returned an unsuccessful response\n\tfrom features/search.feature:123:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 124,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;scn-039",
+        "keyword": "Scenario",
+        "name": "Clear search filters",
+        "line": 124,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 125,
+            "result": {
+              "status": "passed",
+              "duration": 749000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 126,
+            "result": {
+              "status": "passed",
+              "duration": 926000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 127,
+            "result": {
+              "status": "passed",
+              "duration": 955000000
+            }
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "id": "orders",
+    "keyword": "Feature",
+    "name": "Order Management",
+    "description": "Synthetic QA automation feature",
+    "line": 1,
+    "uri": "features/orders.feature",
+    "elements": [
+      {
+        "id": "orders;scn-040",
+        "keyword": "Scenario",
+        "name": "Create a new order",
+        "line": 127,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 128,
+            "result": {
+              "status": "passed",
+              "duration": 2029000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 129,
+            "result": {
+              "status": "passed",
+              "duration": 560000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 130,
+            "result": {
+              "status": "passed",
+              "duration": 1876000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-041",
+        "keyword": "Scenario",
+        "name": "View order details",
+        "line": 130,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 131,
+            "result": {
+              "status": "passed",
+              "duration": 1863000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 132,
+            "result": {
+              "status": "passed",
+              "duration": 2217000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 133,
+            "result": {
+              "status": "passed",
+              "duration": 2467000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-042",
+        "keyword": "Scenario",
+        "name": "Update order quantity",
+        "line": 133,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 134,
+            "result": {
+              "status": "passed",
+              "duration": 1329000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 135,
+            "result": {
+              "status": "passed",
+              "duration": 347000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 136,
+            "result": {
+              "status": "passed",
+              "duration": 769000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-043",
+        "keyword": "Scenario",
+        "name": "Cancel an order",
+        "line": 136,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 137,
+            "result": {
+              "status": "passed",
+              "duration": 2499000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 138,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Net::ReadTimeout: Read timeout while calling order service\nNet::ReadTimeout: Read timeout while calling order service\n\tfrom features/orders.feature:138:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 139,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-044",
+        "keyword": "Scenario",
+        "name": "Verify order status",
+        "line": 139,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 140,
+            "result": {
+              "status": "passed",
+              "duration": 1392000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 141,
+            "result": {
+              "status": "passed",
+              "duration": 1693000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 142,
+            "result": {
+              "status": "passed",
+              "duration": 756000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-045",
+        "keyword": "Scenario",
+        "name": "Search order by ID",
+        "line": 142,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 143,
+            "result": {
+              "status": "passed",
+              "duration": 1502000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 144,
+            "result": {
+              "status": "passed",
+              "duration": 2080000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 145,
+            "result": {
+              "status": "passed",
+              "duration": 947000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-046",
+        "keyword": "Scenario",
+        "name": "Search orders by date",
+        "line": 145,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 146,
+            "result": {
+              "status": "passed",
+              "duration": 2158000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 147,
+            "result": {
+              "status": "passed",
+              "duration": 313000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 148,
+            "result": {
+              "status": "passed",
+              "duration": 1378000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-047",
+        "keyword": "Scenario",
+        "name": "Verify order history",
+        "line": 148,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 149,
+            "result": {
+              "status": "passed",
+              "duration": 2350000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 150,
+            "result": {
+              "status": "passed",
+              "duration": 1031000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 151,
+            "result": {
+              "status": "passed",
+              "duration": 2379000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-048",
+        "keyword": "Scenario",
+        "name": "Export order details",
+        "line": 151,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 152,
+            "result": {
+              "status": "passed",
+              "duration": 735000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 153,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Timeout::Error: Request timed out after 30 seconds\nTimeout::Error: Request timed out after 30 seconds\n\tfrom features/orders.feature:153:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 154,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-049",
+        "keyword": "Scenario",
+        "name": "Create order with invalid product",
+        "line": 154,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 155,
+            "result": {
+              "status": "passed",
+              "duration": 1522000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 156,
+            "result": {
+              "status": "passed",
+              "duration": 2379000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 157,
+            "result": {
+              "status": "passed",
+              "duration": 1114000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-050",
+        "keyword": "Scenario",
+        "name": "Verify order total",
+        "line": 157,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 158,
+            "result": {
+              "status": "passed",
+              "duration": 926000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 159,
+            "result": {
+              "status": "passed",
+              "duration": 1831000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 160,
+            "result": {
+              "status": "passed",
+              "duration": 961000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-051",
+        "keyword": "Scenario",
+        "name": "Update delivery address",
+        "line": 160,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 161,
+            "result": {
+              "status": "passed",
+              "duration": 2472000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 162,
+            "result": {
+              "status": "passed",
+              "duration": 302000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 163,
+            "result": {
+              "status": "passed",
+              "duration": 1627000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orders;scn-052",
+        "keyword": "Scenario",
+        "name": "Verify order confirmation",
+        "line": 163,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 164,
+            "result": {
+              "status": "passed",
+              "duration": 2301000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 165,
+            "result": {
+              "status": "passed",
+              "duration": 379000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 166,
+            "result": {
+              "status": "passed",
+              "duration": 758000000
+            }
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "id": "payments",
+    "keyword": "Feature",
+    "name": "Payments",
+    "description": "Synthetic QA automation feature",
+    "line": 1,
+    "uri": "features/payments.feature",
+    "elements": [
+      {
+        "id": "payments;scn-053",
+        "keyword": "Scenario",
+        "name": "Make a successful payment",
+        "line": 166,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 167,
+            "result": {
+              "status": "passed",
+              "duration": 1786000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 168,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Watir::Exception::UnknownObjectException: Unable to locate search result element\nWatir::Exception::UnknownObjectException: Unable to locate search result element\n\tfrom features/payments.feature:168:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 169,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-054",
+        "keyword": "Scenario",
+        "name": "Verify declined payment",
+        "line": 169,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 170,
+            "result": {
+              "status": "passed",
+              "duration": 1559000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 171,
+            "result": {
+              "status": "passed",
+              "duration": 1280000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 172,
+            "result": {
+              "status": "passed",
+              "duration": 537000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-055",
+        "keyword": "Scenario",
+        "name": "Verify payment timeout",
+        "line": 172,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 173,
+            "result": {
+              "status": "passed",
+              "duration": 1286000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 174,
+            "result": {
+              "status": "passed",
+              "duration": 622000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 175,
+            "result": {
+              "status": "passed",
+              "duration": 650000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-056",
+        "keyword": "Scenario",
+        "name": "View payment history",
+        "line": 175,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 176,
+            "result": {
+              "status": "passed",
+              "duration": 2290000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 177,
+            "result": {
+              "status": "passed",
+              "duration": 583000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 178,
+            "result": {
+              "status": "passed",
+              "duration": 2481000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-057",
+        "keyword": "Scenario",
+        "name": "Refund a payment",
+        "line": 178,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 179,
+            "result": {
+              "status": "passed",
+              "duration": 815000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 180,
+            "result": {
+              "status": "passed",
+              "duration": 825000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 181,
+            "result": {
+              "status": "passed",
+              "duration": 2246000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-058",
+        "keyword": "Scenario",
+        "name": "Verify payment receipt",
+        "line": 181,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 182,
+            "result": {
+              "status": "passed",
+              "duration": 976000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 183,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Watir::Exception::UnknownObjectException: Unable to locate product result element\nWatir::Exception::UnknownObjectException: Unable to locate product result element\n\tfrom features/payments.feature:183:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 184,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-059",
+        "keyword": "Scenario",
+        "name": "Make payment with invalid card",
+        "line": 184,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 185,
+            "result": {
+              "status": "passed",
+              "duration": 1385000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 186,
+            "result": {
+              "status": "passed",
+              "duration": 2461000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 187,
+            "result": {
+              "status": "passed",
+              "duration": 2033000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-060",
+        "keyword": "Scenario",
+        "name": "Verify duplicate payment prevention",
+        "line": 187,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 188,
+            "result": {
+              "status": "passed",
+              "duration": 1167000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 189,
+            "result": {
+              "status": "passed",
+              "duration": 1123000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 190,
+            "result": {
+              "status": "passed",
+              "duration": 1576000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-061",
+        "keyword": "Scenario",
+        "name": "Verify payment status",
+        "line": 190,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 191,
+            "result": {
+              "status": "passed",
+              "duration": 1934000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 192,
+            "result": {
+              "status": "passed",
+              "duration": 1829000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 193,
+            "result": {
+              "status": "passed",
+              "duration": 2094000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-062",
+        "keyword": "Scenario",
+        "name": "Retry a failed payment",
+        "line": 193,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 194,
+            "result": {
+              "status": "passed",
+              "duration": 2419000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 195,
+            "result": {
+              "status": "passed",
+              "duration": 2149000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 196,
+            "result": {
+              "status": "passed",
+              "duration": 795000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-063",
+        "keyword": "Scenario",
+        "name": "Verify payment amount",
+        "line": 196,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 197,
+            "result": {
+              "status": "passed",
+              "duration": 1315000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 198,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Watir::Exception::UnknownObjectException: Unable to locate filter element\nWatir::Exception::UnknownObjectException: Unable to locate filter element\n\tfrom features/payments.feature:198:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 199,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-064",
+        "keyword": "Scenario",
+        "name": "Cancel payment",
+        "line": 199,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 200,
+            "result": {
+              "status": "passed",
+              "duration": 1220000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 201,
+            "result": {
+              "status": "passed",
+              "duration": 562000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 202,
+            "result": {
+              "status": "passed",
+              "duration": 1684000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payments;scn-065",
+        "keyword": "Scenario",
+        "name": "Verify payment audit history",
+        "line": 202,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 203,
+            "result": {
+              "status": "passed",
+              "duration": 386000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 204,
+            "result": {
+              "status": "passed",
+              "duration": 1242000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 205,
+            "result": {
+              "status": "passed",
+              "duration": 1202000000
+            }
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "id": "profile",
+    "keyword": "Feature",
+    "name": "User Profile",
+    "description": "Synthetic QA automation feature",
+    "line": 1,
+    "uri": "features/profile.feature",
+    "elements": [
+      {
+        "id": "profile;scn-066",
+        "keyword": "Scenario",
+        "name": "View user profile",
+        "line": 205,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 206,
+            "result": {
+              "status": "passed",
+              "duration": 329000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 207,
+            "result": {
+              "status": "passed",
+              "duration": 590000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 208,
+            "result": {
+              "status": "passed",
+              "duration": 541000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-067",
+        "keyword": "Scenario",
+        "name": "Update profile name",
+        "line": 208,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 209,
+            "result": {
+              "status": "passed",
+              "duration": 1237000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 210,
+            "result": {
+              "status": "passed",
+              "duration": 576000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 211,
+            "result": {
+              "status": "passed",
+              "duration": 428000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-068",
+        "keyword": "Scenario",
+        "name": "Update email address",
+        "line": 211,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 212,
+            "result": {
+              "status": "passed",
+              "duration": 1653000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 213,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Selenium::WebDriver::Error::NoSuchDriverError: Browser session is no longer available\nSelenium::WebDriver::Error::NoSuchDriverError: Browser session is no longer available\n\tfrom features/profile.feature:213:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 214,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-069",
+        "keyword": "Scenario",
+        "name": "Change password",
+        "line": 214,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 215,
+            "result": {
+              "status": "passed",
+              "duration": 590000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 216,
+            "result": {
+              "status": "passed",
+              "duration": 2405000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 217,
+            "result": {
+              "status": "passed",
+              "duration": 1274000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-070",
+        "keyword": "Scenario",
+        "name": "Upload profile picture",
+        "line": 217,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 218,
+            "result": {
+              "status": "passed",
+              "duration": 1440000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 219,
+            "result": {
+              "status": "passed",
+              "duration": 2288000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 220,
+            "result": {
+              "status": "passed",
+              "duration": 1177000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-071",
+        "keyword": "Scenario",
+        "name": "Verify profile mandatory fields",
+        "line": 220,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 221,
+            "result": {
+              "status": "passed",
+              "duration": 841000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 222,
+            "result": {
+              "status": "passed",
+              "duration": 2236000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 223,
+            "result": {
+              "status": "passed",
+              "duration": 1295000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-072",
+        "keyword": "Scenario",
+        "name": "Update phone number",
+        "line": 223,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 224,
+            "result": {
+              "status": "passed",
+              "duration": 2237000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 225,
+            "result": {
+              "status": "passed",
+              "duration": 1967000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 226,
+            "result": {
+              "status": "passed",
+              "duration": 1079000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-073",
+        "keyword": "Scenario",
+        "name": "View user preferences",
+        "line": 226,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 227,
+            "result": {
+              "status": "passed",
+              "duration": 686000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 228,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "Selenium::WebDriver::Error::WebDriverError: Connection to browser driver was lost\nSelenium::WebDriver::Error::WebDriverError: Connection to browser driver was lost\n\tfrom features/profile.feature:228:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 229,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-074",
+        "keyword": "Scenario",
+        "name": "Update notification settings",
+        "line": 229,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 230,
+            "result": {
+              "status": "passed",
+              "duration": 697000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 231,
+            "result": {
+              "status": "passed",
+              "duration": 2065000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 232,
+            "result": {
+              "status": "passed",
+              "duration": 1751000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-075",
+        "keyword": "Scenario",
+        "name": "Verify profile permissions",
+        "line": 232,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 233,
+            "result": {
+              "status": "passed",
+              "duration": 2034000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 234,
+            "result": {
+              "status": "passed",
+              "duration": 1983000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 235,
+            "result": {
+              "status": "passed",
+              "duration": 2212000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-076",
+        "keyword": "Scenario",
+        "name": "Deactivate profile",
+        "line": 235,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 236,
+            "result": {
+              "status": "passed",
+              "duration": 521000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 237,
+            "result": {
+              "status": "passed",
+              "duration": 703000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 238,
+            "result": {
+              "status": "passed",
+              "duration": 548000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-077",
+        "keyword": "Scenario",
+        "name": "Reactivate profile",
+        "line": 238,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 239,
+            "result": {
+              "status": "passed",
+              "duration": 1949000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 240,
+            "result": {
+              "status": "passed",
+              "duration": 1689000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 241,
+            "result": {
+              "status": "passed",
+              "duration": 747000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile;scn-078",
+        "keyword": "Scenario",
+        "name": "Verify profile audit history",
+        "line": 241,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 242,
+            "result": {
+              "status": "passed",
+              "duration": 1318000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 243,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "OCIError: Database connection could not be established\nOCIError: Database connection could not be established\n\tfrom features/profile.feature:243:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 244,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "id": "reports",
+    "keyword": "Feature",
+    "name": "Reports",
+    "description": "Synthetic QA automation feature",
+    "line": 1,
+    "uri": "features/reports.feature",
+    "elements": [
+      {
+        "id": "reports;scn-079",
+        "keyword": "Scenario",
+        "name": "Generate daily report",
+        "line": 244,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 245,
+            "result": {
+              "status": "passed",
+              "duration": 1084000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 246,
+            "result": {
+              "status": "passed",
+              "duration": 1079000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 247,
+            "result": {
+              "status": "passed",
+              "duration": 2496000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-080",
+        "keyword": "Scenario",
+        "name": "Generate monthly report",
+        "line": 247,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 248,
+            "result": {
+              "status": "passed",
+              "duration": 2137000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 249,
+            "result": {
+              "status": "passed",
+              "duration": 874000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 250,
+            "result": {
+              "status": "passed",
+              "duration": 2028000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-081",
+        "keyword": "Scenario",
+        "name": "Export report as CSV",
+        "line": 250,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 251,
+            "result": {
+              "status": "passed",
+              "duration": 1051000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 252,
+            "result": {
+              "status": "passed",
+              "duration": 1440000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 253,
+            "result": {
+              "status": "passed",
+              "duration": 2194000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-082",
+        "keyword": "Scenario",
+        "name": "Export report as PDF",
+        "line": 253,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 254,
+            "result": {
+              "status": "passed",
+              "duration": 1323000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 255,
+            "result": {
+              "status": "passed",
+              "duration": 608000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 256,
+            "result": {
+              "status": "passed",
+              "duration": 2115000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-083",
+        "keyword": "Scenario",
+        "name": "Filter report by date",
+        "line": 256,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 257,
+            "result": {
+              "status": "passed",
+              "duration": 701000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 258,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "ActiveRecord::RecordNotUnique: Duplicate customer email address\nActiveRecord::RecordNotUnique: Duplicate customer email address\n\tfrom features/reports.feature:258:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 259,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-084",
+        "keyword": "Scenario",
+        "name": "Verify report totals",
+        "line": 259,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 260,
+            "result": {
+              "status": "passed",
+              "duration": 507000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 261,
+            "result": {
+              "status": "passed",
+              "duration": 360000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 262,
+            "result": {
+              "status": "passed",
+              "duration": 682000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-085",
+        "keyword": "Scenario",
+        "name": "Generate customer report",
+        "line": 262,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 263,
+            "result": {
+              "status": "passed",
+              "duration": 1268000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 264,
+            "result": {
+              "status": "passed",
+              "duration": 981000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 265,
+            "result": {
+              "status": "passed",
+              "duration": 1964000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-086",
+        "keyword": "Scenario",
+        "name": "Generate order report",
+        "line": 265,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 266,
+            "result": {
+              "status": "passed",
+              "duration": 2289000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 267,
+            "result": {
+              "status": "passed",
+              "duration": 2271000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 268,
+            "result": {
+              "status": "passed",
+              "duration": 1175000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-087",
+        "keyword": "Scenario",
+        "name": "Generate payment report",
+        "line": 268,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 269,
+            "result": {
+              "status": "passed",
+              "duration": 1942000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 270,
+            "result": {
+              "status": "passed",
+              "duration": 540000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 271,
+            "result": {
+              "status": "passed",
+              "duration": 974000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-088",
+        "keyword": "Scenario",
+        "name": "Verify report pagination",
+        "line": 271,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 272,
+            "result": {
+              "status": "passed",
+              "duration": 1852000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 273,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "RuntimeError: Customer already exists\nRuntimeError: Customer already exists\n\tfrom features/reports.feature:273:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 274,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-089",
+        "keyword": "Scenario",
+        "name": "Schedule a report",
+        "line": 274,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 275,
+            "result": {
+              "status": "passed",
+              "duration": 308000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 276,
+            "result": {
+              "status": "passed",
+              "duration": 1899000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 277,
+            "result": {
+              "status": "passed",
+              "duration": 1386000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-090",
+        "keyword": "Scenario",
+        "name": "Download scheduled report",
+        "line": 277,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 278,
+            "result": {
+              "status": "passed",
+              "duration": 2163000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 279,
+            "result": {
+              "status": "passed",
+              "duration": 1468000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 280,
+            "result": {
+              "status": "passed",
+              "duration": 2032000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "reports;scn-091",
+        "keyword": "Scenario",
+        "name": "Verify report permissions",
+        "line": 280,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 281,
+            "result": {
+              "status": "passed",
+              "duration": 2293000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 282,
+            "result": {
+              "status": "passed",
+              "duration": 934000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 283,
+            "result": {
+              "status": "passed",
+              "duration": 1077000000
+            }
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "id": "api",
+    "keyword": "Feature",
+    "name": "API Integration",
+    "description": "Synthetic QA automation feature",
+    "line": 1,
+    "uri": "features/api.feature",
+    "elements": [
+      {
+        "id": "api;scn-092",
+        "keyword": "Scenario",
+        "name": "Retrieve customer through API",
+        "line": 283,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 284,
+            "result": {
+              "status": "passed",
+              "duration": 1515000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 285,
+            "result": {
+              "status": "passed",
+              "duration": 1191000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 286,
+            "result": {
+              "status": "passed",
+              "duration": 539000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api;scn-093",
+        "keyword": "Scenario",
+        "name": "Create customer through API",
+        "line": 286,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 287,
+            "result": {
+              "status": "passed",
+              "duration": 549000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 288,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "RSpec::Expectations::ExpectationNotMetError: Expected total 150.0 but received 175.0\nRSpec::Expectations::ExpectationNotMetError: Expected total 150.0 but received 175.0\n\tfrom features/api.feature:288:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 289,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "api;scn-094",
+        "keyword": "Scenario",
+        "name": "Update customer through API",
+        "line": 289,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 290,
+            "result": {
+              "status": "passed",
+              "duration": 1584000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 291,
+            "result": {
+              "status": "passed",
+              "duration": 534000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 292,
+            "result": {
+              "status": "passed",
+              "duration": 505000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api;scn-095",
+        "keyword": "Scenario",
+        "name": "Delete customer through API",
+        "line": 292,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 293,
+            "result": {
+              "status": "passed",
+              "duration": 2252000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 294,
+            "result": {
+              "status": "passed",
+              "duration": 2359000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 295,
+            "result": {
+              "status": "passed",
+              "duration": 2475000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api;scn-096",
+        "keyword": "Scenario",
+        "name": "Retrieve order through API",
+        "line": 295,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 296,
+            "result": {
+              "status": "passed",
+              "duration": 944000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 297,
+            "result": {
+              "status": "passed",
+              "duration": 532000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 298,
+            "result": {
+              "status": "passed",
+              "duration": 2380000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api;scn-097",
+        "keyword": "Scenario",
+        "name": "Create order through API",
+        "line": 298,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 299,
+            "result": {
+              "status": "passed",
+              "duration": 628000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 300,
+            "result": {
+              "status": "passed",
+              "duration": 1061000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 301,
+            "result": {
+              "status": "passed",
+              "duration": 580000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api;scn-098",
+        "keyword": "Scenario",
+        "name": "Verify invalid API token",
+        "line": 301,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 302,
+            "result": {
+              "status": "passed",
+              "duration": 578000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 303,
+            "result": {
+              "status": "failed",
+              "duration": 30000000000,
+              "error_message": "RSpec::Expectations::ExpectationNotMetError: Expected payment status successful but received pending\nRSpec::Expectations::ExpectationNotMetError: Expected payment status successful but received pending\n\tfrom features/api.feature:303:in `block in run_step'\n\tfrom /synthetic/project/features/step_definitions/common_steps.rb:42:in `block in click_element'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/watir-7.3.0/lib/watir/elements/element.rb:120:in `click'\n\tfrom /synthetic/project/vendor/bundle/ruby/gems/selenium-webdriver-4.20.0/lib/selenium/webdriver/common/element.rb:75:in `click'\n"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 304,
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "api;scn-099",
+        "keyword": "Scenario",
+        "name": "Verify API response schema",
+        "line": 304,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 305,
+            "result": {
+              "status": "passed",
+              "duration": 1263000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 306,
+            "result": {
+              "status": "passed",
+              "duration": 1953000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 307,
+            "result": {
+              "status": "passed",
+              "duration": 791000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api;scn-100",
+        "keyword": "Scenario",
+        "name": "Verify API response status",
+        "line": 307,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user opens the application",
+            "line": 308,
+            "result": {
+              "status": "passed",
+              "duration": 1308000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user performs the requested action",
+            "line": 309,
+            "result": {
+              "status": "passed",
+              "duration": 462000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "expected result should be displayed",
+            "line": 310,
+            "result": {
+              "status": "passed",
+              "duration": 635000000
+            }
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ]
+  }
+]
